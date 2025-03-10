@@ -1,0 +1,33 @@
+/* info */
+/*column-gap: xxx ; separacion solo entre columnas 
+    row-gap: xxx ; separacion solo entre filas*/
+
+
+.grid{
+ 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  /*se establecen las columnas por porcentajes  */
+
+    grid-template-rows: auto;/*se delimita la altura de las columnas (en este casso se acomodan de forma automatica segun la alura del elemento que contenga) */
+    gap: 20px;  gap: 20px; /*separacion entre los elememtos de la grilla */
+        
+}
+
+.sub-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}    
+.grid div {
+    background: rgba(0, 0, 0,0.5);
+    padding: 1em;
+    min-height: 400px;
+    border-radius: 10px;
+    max-height:auto ;
+    
+}
+.grid div:hover{
+    border: 3px solid yellow;
+}
+    
+    
